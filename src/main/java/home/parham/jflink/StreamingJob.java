@@ -49,6 +49,7 @@ public class StreamingJob {
 				.sum(1);
 
 		dataStream.print();
+		dataStream.writeToSocket("localhost", 9998, element -> element.toString().getBytes());
 
 		env.execute("Window WordCount");
 	}
