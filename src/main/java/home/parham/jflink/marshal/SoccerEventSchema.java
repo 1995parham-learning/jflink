@@ -13,7 +13,7 @@ public class SoccerEventSchema implements DeserializationSchema<SoccerEvent>, Se
     public SoccerEvent deserialize(byte[] message) throws IOException {
         Gson gson = new Gson();
         SoccerEvent event = new SoccerEvent();
-        gson.fromJson(message.toString(), SoccerEvent.class);
+        gson.fromJson(String.valueOf(message), SoccerEvent.class);
         return event;
     }
 
