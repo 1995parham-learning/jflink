@@ -69,12 +69,14 @@ dependencies {
     // --------------------------------------------------------------
     compile "org.apache.flink:flink-java:${flinkVersion}"
     compile "org.apache.flink:flink-streaming-java_${scalaBinaryVersion}:${flinkVersion}"
+    compile "org.apache.flink:flink-connector-kafka_${scalaBinaryVersion}:${flinkVersion}"
+    compile 'com.google.code.gson:gson:2.8.6'
 
     // --------------------------------------------------------------
     // Dependencies that should be part of the shadow jar, e.g.
     // connectors. These must be in the flinkShadowJar configuration!
     // --------------------------------------------------------------
-    //flinkShadowJar "org.apache.flink:flink-connector-kafka-0.11_${scalaBinaryVersion}:${flinkVersion}"
+    flinkShadowJar "org.apache.flink:flink-connector-kafka_${scalaBinaryVersion}:${flinkVersion}"
 
     compile "log4j:log4j:${log4jVersion}"
     compile "org.slf4j:slf4j-log4j12:${slf4jVersion}"
