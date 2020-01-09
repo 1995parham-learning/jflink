@@ -84,6 +84,9 @@ dependencies {
     // Add test dependencies here.
     testCompile "org.junit.jupiter:junit-jupiter-api:5.0.2"
     testRuntime "org.junit.jupiter:junit-jupiter-engine:5.0.2"
+    testCompile "org.apache.flink:flink-test-utils_${scalaBinaryVersion}:${flinkVersion}"
+    testRuntime "org.apache.flink:flink-runtime_${scalaBinaryVersion}:${flinkVersion}"
+    testCompile "org.apache.flink:flink-streaming-java_${scalaBinaryVersion}:${flinkVersion}:tests"
 }
 
 // make compileOnly dependencies available for tests:
