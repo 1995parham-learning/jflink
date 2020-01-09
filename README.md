@@ -1,4 +1,6 @@
 # jFlink
+[![Drone (cloud)](https://img.shields.io/drone/build/1995parham/jflink.svg?style=flat-square)](https://cloud.drone.io/1995parham/jflink)
+
 ## Up and Running
 A Flink application project using Java and Gradle.
 
