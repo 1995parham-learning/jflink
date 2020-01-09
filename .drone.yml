@@ -7,3 +7,7 @@ steps:
     image: gradle:6.0-jdk8
     commands:
       - gradle clean shadowJar
+  - name: test
+    image: gradle:6.0-jdk8
+    commands:
+      - gradle test
