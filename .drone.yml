@@ -1,0 +1,7 @@
+---
+build:
+  image: 6.0-jdk8
+  environment:
+    - GRADLE_USER_HOME=~/.gradle
+  commands:
+    - gradle clean shadowJar
