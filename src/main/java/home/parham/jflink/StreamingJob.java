@@ -51,7 +51,7 @@ public class StreamingJob {
 
 		Properties kafkaProperties = new Properties();
 		kafkaProperties.setProperty("bootstrap.servers", "localhost:9092");
-		kafkaProperties.setProperty("group.id", "sevda");
+		kafkaProperties.setProperty("group.id", "hello");
 
 		DataStream<Tuple2<String, Integer>> dataStream = env
 				.addSource(new FlinkKafkaConsumer<>("events", new SimpleStringSchema(), kafkaProperties))
