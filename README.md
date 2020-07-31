@@ -1,5 +1,5 @@
 # jFlink
-[![Drone (cloud)](https://img.shields.io/drone/build/1995parham/jflink.svg?style=flat-square)](https://cloud.drone.io/1995parham/jflink)
+[![Drone (cloud)](https://img.shields.io/drone/build/Chaltech/jflink.svg?style=flat-square&logo=drone)](https://cloud.drone.io/Chaltech/jflink)
 
 ## Introduction
 There are many events in a soccer game. events have the following structure in JSON:
